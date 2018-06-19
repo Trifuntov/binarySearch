@@ -14,7 +14,7 @@ func binarySearch (array: [Int], value: Int) -> Int?{
         
         while indexMin <= indexMax{
             
-            let indexMid = indexMin + indexMax
+            let indexMid = (indexMin + indexMax)/2
             
             if array[indexMid] == value{
                 return indexMid
@@ -29,6 +29,7 @@ func binarySearch (array: [Int], value: Int) -> Int?{
     }
     return nil
 }
+
 binarySearch(array: array, value: srh)
 
 
